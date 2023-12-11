@@ -1,5 +1,27 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+/* App styles */
 .App {
   text-align: center;
+  background: url('./background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -14,18 +36,49 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff; /* Text color of the title */
+}
+
+.App-nav {
+  margin-top: 20px;
+}
+
+.App-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.AppNav a {
+  text-decoration: none;
+  color: #fff !important; /* !important to ensure it takes precedence */
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+  padding: 50px 10px; /* Add padding for better spacing */
+}
+
+.App h1 {
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+.App h3 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.AppNav a:hover {
+  color: #ff8c00 !important; /* !important to ensure it takes precedence */
 }
 
 @keyframes App-logo-spin {
