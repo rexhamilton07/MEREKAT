@@ -1,0 +1,23 @@
+.Tracks {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.Tracks iframe {
+    padding: 20px
+}
+
+.AppleMusicTracks {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.AppleMusicTracks iframe {
+    margin: 20px;
+}
+
+.Music {
+    margin-bottom: 50px;
+}

@@ -5,7 +5,7 @@ const Merch = () => {
 
   return (
     <div>
-      <h1>MyComponent</h1>
+      <h3>Coming Soon</h3>
     </div>
   );
 };

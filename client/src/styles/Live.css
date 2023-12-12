@@ -1,0 +1,32 @@
+.LiveDiv {
+    background-color: rgba(213, 138, 138, 0);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.calendar {
+    margin-top: 20px;
+    height: 400px;
+    width: 600px;
+}
+
+.janesparty {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 40%;
+}
+
+.janespartycontainer {
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

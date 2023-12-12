@@ -1,0 +1,11 @@
+.Gallery {
+    max-width: 95%;
+
+    justify-content: center;
+}
+
+.Gallery img {
+    height: auto;
+    width: 40%;
+    padding: 20px;
+}

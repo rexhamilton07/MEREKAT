@@ -1,37 +1,79 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-
-// Import background image
-import bandBackground from './background.jpg';
+import factor from './factor.png'
+import instaIcon from './insta.png';
+import spotify from './spotify.png'
+import apple from './apple.png'
 
 // Import components
 import Live from './components/Live';
 import Music from './components/Music';
 import Merch from './components/Merch';
 import About from './components/About';
+import Gallery from './components/Gallery';
+
+function Header() {
+  return (
+    <header className="App-header">
+      <Link to="/" className="App-title">
+        <h1>MEREKAT</h1>
+      </Link>
+      <h3>ruining your night with live music since 2021</h3>
+      <nav className="App-nav">
+        <Link to="/about">About</Link>
+        <Link to="/music">Music</Link>
+        <Link to="/live">Live</Link>
+        <Link to="/merch">Merch</Link>
+        <Link to="/gallery">Gallery</Link>
+      </nav>
+    </header>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="AppFooter">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/merekat.tv/" target="_blank" rel="noopener noreferrer">
+            <img className='factorphoto' src={instaIcon} alt="Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="https://open.spotify.com/artist/3JoWxHEY7RGWFGLIgrFA7K?si=f7RK1GDMQs2jep_CBoddSg" target="_blank" rel="noopener noreferrer">
+            <img className='factorphoto' src={spotify} alt="spotify" />
+          </a>
+        </li>
+        <li>
+          <a href="https://music.apple.com/us/artist/merekat/1697401553" target="_blank" rel="noopener noreferrer">
+            <img className='factorphoto' src={apple} alt="apple music" />
+          </a>
+        </li>
+        <li><img className='factorphoto' src={factor} alt="Factor" /></li>
+        {/* Add more links as needed */}
+      </ul>
+    </footer>
+  );
+}
 
 function App() {
   return (
     <Router>
-      <div className="App" style={{ backgroundImage: `url(${bandBackground})`, backgroundSize: 'cover' }}>
-        <header className="App-header">
-          <h1>MEREKAT</h1>
-          <h3>ruining your night with live music since 2021</h3>
-          <nav className="AppNav">
-            <Link to="/live">Live</Link>
-            <Link to="/music">Music</Link>
-            <Link to="/merch">Merch</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </header>
+      <div className="App">
+        <Header />
 
-        <Routes>
-          <Route path="/live" element={<Live />} />
-          <Route path="/music" element={<Music />} />
-          <Route path="/merch" element={<Merch />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <div className="ContentWrapper">
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/live" element={<Live />} />
+            <Route path="/merch" element={<Merch />} />
+            <Route path="/gallery" element={<Gallery />} />
+          </Routes>
+        </div>
+
+        <Footer />
       </div>
     </Router>
   );

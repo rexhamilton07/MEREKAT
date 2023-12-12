@@ -1,0 +1,24 @@
+.AboutDiv {
+
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.bandimages img {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.bandimages {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
