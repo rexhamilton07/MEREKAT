@@ -50,6 +50,11 @@ body {
   color: red;
 }
 
+.AppFooter p {
+  padding: 5px;
+  color: black;
+}
+
 .App-nav a {
   text-decoration: none;
   color: #fff !important;
@@ -71,7 +76,7 @@ body {
 }
 
 .ContentWrapper {
-  margin-top: 80px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;

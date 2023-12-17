@@ -1,11 +1,12 @@
 .Gallery {
     max-width: 95%;
-
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .Gallery img {
     height: auto;
     width: 40%;
     padding: 20px;
+    max-height: 20%;
 }

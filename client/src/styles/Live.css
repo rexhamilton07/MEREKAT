@@ -3,7 +3,7 @@
     padding: 20px;
     border-radius: 10px;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .calendar {
@@ -21,6 +21,11 @@
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 40%;
+    border-radius: 10px;
+}
+
+.janesparty:hover {
+    background-color: red;
 }
 
 .janespartycontainer {
