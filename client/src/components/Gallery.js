@@ -14,16 +14,15 @@ import imgten from '../images/10.jpg'
 const Gallery = () => {
   return (
     <div className = 'GalleryDiv'>
-      <h3>Gallery</h3>
         <div className='Gallery'>
-            <img src={imgone}></img>
+            <img src={imgeight}></img>
             <img src={imgtwo}></img>
             <img src={imgthree}></img>
+            <img src={imgone}></img>
             <img src={imgfour}></img>
             <img src={imgfive}></img>
             <img src={imgsix}></img>
             <img src={imgseven}></img>
-            <img src={imgeight}></img>
             <img src={imgnine}></img>
             <img src={imgten}></img>
         </div>

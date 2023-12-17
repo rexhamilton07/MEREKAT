@@ -5,8 +5,6 @@ import factor from './factor.png'
 import instaIcon from './insta.png';
 import spotify from './spotify.png'
 import apple from './apple.png'
-
-// Import components
 import Live from './components/Live';
 import Music from './components/Music';
 import Merch from './components/Merch';
@@ -24,7 +22,7 @@ function Header() {
         <Link to="/about">About</Link>
         <Link to="/music">Music</Link>
         <Link to="/live">Live</Link>
-        <Link to="/merch">Merch</Link>
+        {/* <Link to="/merch">Merch</Link> */}
         <Link to="/gallery">Gallery</Link>
       </nav>
     </header>
@@ -50,9 +48,13 @@ function Footer() {
             <img className='factorphoto' src={apple} alt="apple music" />
           </a>
         </li>
-        <li><img className='factorphoto' src={factor} alt="Factor" /></li>
-        {/* Add more links as needed */}
+        <li>
+          <a href="https://factor.ca" target="_blank" rel="noopener noreferrer">
+            <img className='factorphoto' src={factor} alt="factor canada" />
+          </a>
+        </li>
       </ul>
+      <p>&#169; MEREKAT 2023</p>
     </footer>
   );
 }
