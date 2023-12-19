@@ -18,19 +18,19 @@ const About = () => {
         The band is fortunate to have received funding from FACTOR Canada, which is going towards their debut EP to be released mid-2024. 
       </p>
       <div className = 'bandimages'>
-        <div className='seb'>
+        <div className='member'>
           <img src={Seb}/>
           <p>Sebastian Brabant (Vocals, Guitar)</p>
         </div>
-        <div className='dre'>
+        <div className='member'>
           <img src={Dre}/>
           <p>Andreas Fauquier (Guitar)</p>
         </div>
-        <div className='lucas'>
+        <div className='member'>
           <img src={Lucas}/>
           <p>Lucas Brabant (Bass)</p>
         </div>
-        <div className='rex'>
+        <div className='member'>
           <img src={Rex}/>
           <p>Rex Hamilton (Drums)</p>
         </div>
