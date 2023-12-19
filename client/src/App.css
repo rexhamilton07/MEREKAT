@@ -4,9 +4,10 @@ body, h1, h2, p, ul {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inconsolata', monospace;
   color: #fff;
   margin: 0;
+  font-weight: bold;
 }
 
 .App {
@@ -34,6 +35,10 @@ body {
   margin-bottom: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.App-header h3 {
+  font-weight: bold;
 }
 
 .App-nav {
@@ -68,6 +73,7 @@ body {
   font-size: 80px;
   font-weight: lighter;
   text-decoration: none;
+  font-family: 'Inconsolata', monospace; /* Add this line */
 }
 
 .App h3 {
@@ -86,11 +92,13 @@ body {
 .AppFooter {
   position: fixed;
   bottom: 0;
-  width: 80%;
+  width: 30%;
   padding: 15px;
   text-align: center;
-  margin-bottom: 20px;
   z-index: 2000;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  margin-bottom: 5px;
 }
 
 /* Updated styles for the footer links */
@@ -114,4 +122,5 @@ body {
 
 .factorphoto {
   max-height: 30px;
+  height: 80%;
 }
