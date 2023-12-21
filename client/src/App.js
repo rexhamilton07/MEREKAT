@@ -53,8 +53,10 @@ function Footer() {
             <img className='factorphoto' src={factor} alt="factor canada" />
           </a>
         </li>
+        {/* <li>
+          <p>&#169; MEREKAT 2023</p>
+        </li> */}
       </ul>
-      <p>&#169; MEREKAT 2023</p>
     </footer>
   );
 }
